@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import kk.techbytecare.fancylayouts.CircularImage.CircularImageActivity;
 import kk.techbytecare.fancylayouts.LoadingView.LoadingViewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +26,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, LoadingViewActivity.class));
+                finish();
+            }
+        });
+
+        btnCircular.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, CircularImageActivity.class));
                 finish();
             }
         });
