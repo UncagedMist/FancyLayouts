@@ -10,11 +10,12 @@ import android.widget.Button;
 import kk.techbytecare.fancylayouts.CircularImage.CircularImageActivity;
 import kk.techbytecare.fancylayouts.CoolMenu.CoolMenuActivity;
 import kk.techbytecare.fancylayouts.LoadingView.LoadingViewActivity;
+import kk.techbytecare.fancylayouts.Toasty.ToastyActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btnLoading, btnCircular;
-    Button btnCoolMenu;
+    Button btnCoolMenu,btnToasty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         btnCircular = findViewById(R.id.btnCircular);
 
         btnCoolMenu = findViewById(R.id.btnCoolMenu);
+        btnToasty = findViewById(R.id.btnToasty);
 
         btnLoading.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,5 +52,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        btnToasty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ToastyActivity.class));
+                finish();
+            }
+        });
     }
 }

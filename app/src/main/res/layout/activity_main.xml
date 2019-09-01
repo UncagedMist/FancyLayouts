@@ -50,8 +50,8 @@
 
         <Button
             android:layout_margin="2dp"
-            android:id="@+id/btnEmpty"
-            android:text="Empty"
+            android:id="@+id/btnToasty"
+            android:text="Toasty"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />

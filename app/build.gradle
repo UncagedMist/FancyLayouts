@@ -37,4 +37,7 @@ dependencies {
 
     //cool menu
     implementation 'com.github.notice501:coolmenu:v1.2'
+
+    //toasty
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
 }

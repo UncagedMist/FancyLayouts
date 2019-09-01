@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Toasty.ToastyActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="ERROR Toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onError"/>
+
+        <Button
+            android:text="Success Toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSuccess"/>
+
+        <Button
+            android:text="Info Toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onInfo"/>
+
+        <Button
+            android:text="Info Toast with formatting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onInfoFormat"/>
+
+
+        <Button
+            android:text="Warning Toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onWarning"/>
+
+
+        <Button
+            android:text="Normal Toast(Without Icon)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onNormalIconLess"/>
+        <Button
+            android:text="Normal Toast(With Icon)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onNormalWithIcon"/>
+
+        <Button
+            android:text="Custom Configuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onCustom"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
