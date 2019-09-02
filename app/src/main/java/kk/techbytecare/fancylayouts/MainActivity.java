@@ -10,12 +10,15 @@ import android.widget.Button;
 import kk.techbytecare.fancylayouts.CircularImage.CircularImageActivity;
 import kk.techbytecare.fancylayouts.CoolMenu.CoolMenuActivity;
 import kk.techbytecare.fancylayouts.LoadingView.LoadingViewActivity;
+import kk.techbytecare.fancylayouts.SweetAlert.SweetAlert;
+import kk.techbytecare.fancylayouts.SwipeButton.SwipeButton;
 import kk.techbytecare.fancylayouts.Toasty.ToastyActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btnLoading, btnCircular;
     Button btnCoolMenu,btnToasty;
+    Button btnSwipeButton, btnSweetAlert;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +30,9 @@ public class MainActivity extends AppCompatActivity {
 
         btnCoolMenu = findViewById(R.id.btnCoolMenu);
         btnToasty = findViewById(R.id.btnToasty);
+
+        btnSwipeButton = findViewById(R.id.btnSwipeButton);
+        btnSweetAlert = findViewById(R.id.btnSweetAlert);
 
         btnLoading.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +63,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, ToastyActivity.class));
+                finish();
+            }
+        });
+
+        btnSwipeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SwipeButton.class));
+                finish();
+            }
+        });
+
+        btnSweetAlert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SweetAlert.class));
                 finish();
             }
         });
