@@ -1,4 +1,4 @@
-package kk.techbytecare.fancylayouts.SweetAlert;
+package kk.techbytecare.fancylayouts.NiftyDialog;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import kk.techbytecare.fancylayouts.R;
 
-public class SweetAlert extends AppCompatActivity {
+public class NiftyDialog extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sweet_alert);
+        setContentView(R.layout.activity_nifty_dialog);
     }
 }

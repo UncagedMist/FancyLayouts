@@ -9,8 +9,9 @@ import android.widget.Button;
 
 import kk.techbytecare.fancylayouts.CircularImage.CircularImageActivity;
 import kk.techbytecare.fancylayouts.CoolMenu.CoolMenuActivity;
+import kk.techbytecare.fancylayouts.InfiniteCards.InfiniteCards;
 import kk.techbytecare.fancylayouts.LoadingView.LoadingViewActivity;
-import kk.techbytecare.fancylayouts.SweetAlert.SweetAlert;
+import kk.techbytecare.fancylayouts.NiftyDialog.NiftyDialog;
 import kk.techbytecare.fancylayouts.SwipeButton.SwipeButton;
 import kk.techbytecare.fancylayouts.Toasty.ToastyActivity;
 
@@ -18,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnLoading, btnCircular;
     Button btnCoolMenu,btnToasty;
-    Button btnSwipeButton, btnSweetAlert;
+    Button btnSwipeButton, btnNifty;
+    Button btnInfinite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
         btnToasty = findViewById(R.id.btnToasty);
 
         btnSwipeButton = findViewById(R.id.btnSwipeButton);
-        btnSweetAlert = findViewById(R.id.btnSweetAlert);
+        btnNifty = findViewById(R.id.btnNifty);
+
+        btnInfinite = findViewById(R.id.btnInfinitte);
 
         btnLoading.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,10 +79,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnSweetAlert.setOnClickListener(new View.OnClickListener() {
+        btnNifty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, SweetAlert.class));
+                startActivity(new Intent(MainActivity.this, NiftyDialog.class));
+                finish();
+            }
+        });
+
+        btnInfinite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, InfiniteCards.class));
                 finish();
             }
         });

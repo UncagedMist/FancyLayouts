@@ -76,8 +76,34 @@
 
         <Button
             android:layout_margin="2dp"
-            android:id="@+id/btnSweetAlert"
-            android:text="Sweet Alert"
+            android:id="@+id/btnNifty"
+            android:text="Nifty Dialog"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_margin="2dp"
+            android:id="@+id/btnInfinitte"
+            android:text="Infinte Cards"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_margin="2dp"
+            android:id="@+id/btn"
+            android:text="Empty"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
